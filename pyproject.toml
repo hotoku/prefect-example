@@ -8,6 +8,7 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.9"
 prefect = {extras = ["gcp"], version = "^0.15.3"}
+mypy = "^0.910"
 
 [tool.poetry.dev-dependencies]
 
