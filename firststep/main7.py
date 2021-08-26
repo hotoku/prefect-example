@@ -1,5 +1,10 @@
 from prefect import task, Flow
 
+"""
+これは成功する。
+g(x, y)のreturn x + yでは、実際には<Task: Add>という値が構成されてreturnされている。
+"""
+
 
 @task
 def f(x, y):
