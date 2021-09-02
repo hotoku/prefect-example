@@ -1,3 +1,4 @@
+import pdb
 import pandas as pd
 from prefect import task, Flow
 
@@ -10,4 +11,5 @@ def doit(n):
 with Flow("my flos") as flow:
     doit(1)
 
-flow.run()
+ret = flow.run()
+pdb.set_trace()
