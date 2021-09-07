@@ -5,6 +5,7 @@ from prefect.executors.dask import LocalDaskExecutor
 
 """
 LocalDaskExecutorで並列処理になる
+worker数の指定方法が不明
 """
 
 
@@ -21,9 +22,9 @@ def myprint(k, v):
 
 
 with Flow("my flow",
-          executor=LocalDaskExecutor()) as flow:
+          executor=LocalDaskExecutor(n_workers=2)) as flow:
     dic = {
-        i: doit(i) for i in range(3)
+        i: doit(i) for i in range(100)
     }
     for k, v in dic.items():
         myprint(k, v)
