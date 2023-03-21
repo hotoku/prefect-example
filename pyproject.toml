@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "prefect-example"
+version = "0.1.0"
+description = ""
+authors = ["Yasunori Horikoshi <hotoku@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "prefect_example"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
