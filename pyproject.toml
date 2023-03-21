@@ -9,6 +9,7 @@ packages = [{include = "prefect_example"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+prefect = "^2.8.6"
 
 
 [build-system]
