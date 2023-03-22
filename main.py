@@ -25,8 +25,8 @@ def task_sum(ls: list[int]) -> int:
 def main():
     xs = []
     for i in range(3):
-        xs.append(task1(i))
-    print(task_sum(xs))
+        xs.append(task1.submit(i))
+    print(task_sum.submit(xs))
 
 
 def run():
