@@ -11,6 +11,7 @@ packages = [{include = "prefect_example"}]
 python = "^3.10"
 prefect = "^2.8.6"
 prefect-dask = "^0.2.3"
+greenlet = "^2.0.2"
 
 
 [build-system]
